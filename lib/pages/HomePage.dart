@@ -37,6 +37,11 @@ class HomePage extends StatelessWidget {
                 ),
               ),
               PopupMenuButton(
+                onSelected: (selected) {
+                  if (selected == 5) {
+                    Navigator.pushNamed(context, "SettingsPage");
+                  }
+                },
                 elevation: 10,
                 // elevation is the height of the pop menu button
                 padding: EdgeInsets.symmetric(vertical: 20),

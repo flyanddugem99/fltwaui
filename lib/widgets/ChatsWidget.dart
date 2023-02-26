@@ -15,7 +15,9 @@ class ChatsWidget extends StatelessWidget {
           children: [
             for (int i = 1; i < 9; i++)
               InkWell(
-                onTap: () {},
+                onTap: () {
+                  Navigator.pushNamed(context, "chatPage");
+                },
                 child: Container(
                   margin: EdgeInsets.symmetric(vertical: 12),
                   child: Row(

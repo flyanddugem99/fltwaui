@@ -1,3 +1,4 @@
+import 'dart:html';
 import 'dart:ui';
 
 import "package:flutter/material.dart";
@@ -186,6 +187,12 @@ class HomePage extends StatelessWidget {
               ),
             ),
           ],
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () {},
+          backgroundColor: Color(0xFF075E55),
+          child: Icon(Icons.message),
+          //ga mau keluar(???)
         ),
       ),
     );
